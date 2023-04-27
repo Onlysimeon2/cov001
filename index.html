@@ -7,13 +7,12 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
 </head>
 <body>
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <ion-icon name="menu-outline"></ion-icon>
+            <i class="fas fa-bars"></i>
        </label>
         <label class="logo-1">FLU<a>X</a></label>
         <ul>
@@ -24,6 +23,7 @@
             <button>Connect Wallet</button>
         </ul>
     </nav>
+    <section></section>
     <h3>UNIFIELD PRODUCT, SIMPLIFIED TRADING</h3>
     <h1>A Fully Decentralized Perpetual<br> Exchange</h1>
     <p>An Extended Decentralized Exchange With First Ever<br> C-Dex Protocol</p>
@@ -45,7 +45,6 @@
             <p>Trade perpetual contracts with up to 30x leverage with minimum<br>fees</p>
         </div>
     </div>
-    <b><img src="image03.jpg" height="500"></b>
     <h4>Fully Decentralized<br>Completely Secure.</h4>
     <h6>Flux aims to connect all isolated blockchains and
         <br>establish a cross-chain asset exchange network.<br>
@@ -53,6 +52,7 @@
          escosystem. Let every digital asset holder experience a<br>
          truly safe.free and transparent Defi services.
     </h6>
+    <div class="img-11"><img src="image03.jpg"></div>
     <label class="img"><img src="mark.jpg" height="60">Built by experience blockchain Developers</label>
     <label class="img"><img src="mark.jpg" height="60">Regular review and testing of platform</label>
     <label class="img"><img src="mark.jpg" height="60">Non-custodial and secured</label>
@@ -76,11 +76,11 @@
         <li><a href="#">
             <ion-icon name="logo-twitter"></ion-icon>
             <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
+            <ion-icon name="logo-instagram"></ion-icon></a></li>
         <li><a href="#">Copyright c 2023 Flux. All Rights Reserved.</a></li>
     </div>
 </body>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <style>
     *{
         box-sizing: border-box;
@@ -91,7 +91,7 @@
     }
     body{
         background-color: rgb(22, 7, 34);
-        font-family: sans-serif;
+        font-family: montserrrat;
     }
     nav{
         background-color:#120e3a;
@@ -101,8 +101,8 @@
     label.logo-1{
         color: white;
         font-size: 40px;
-        line-height: 70px;
-        padding: 0 100px;
+        line-height: 80px;
+        padding: 0 20px;
         font-weight: bold;
     }
     nav ul{
@@ -111,8 +111,8 @@
     }
     nav ul li{
         display: inline-block;
-        line-height: 70px;
-        margin: 0 20px;
+        line-height: 80px;
+        margin: 0 px;
     }
     nav ul li a{
         color: white;
@@ -127,8 +127,9 @@
     .checkbtn{
         font-size: 30px;
         color: white;
-        line-height: 70px;
-        margin-left: 30px;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
         cursor: pointer;
     }
     #check{
@@ -185,21 +186,22 @@
     .grid-container{
         display: grid;
         grid-template-columns: 2fr 2fr;
-        margin-inline: 30px;
         margin-top: 50px;
+        gap: 40px;
+        margin-inline: 35px;
     }
     .grid-1{
         background-color: rgb(83, 52, 112);
         margin-top: 20px;
-        height: 300px;
-        margin-inline: 30px;
+        height: 320px;
+        width: 100%;
         border-radius: 20px;
     }
     .grid-2{
         background-color: rgb(83, 52, 112);
         margin-top: 20px;
-        height: 300px;
-        margin-inline: 30px;
+        height: 320px;
+        width: 100%;
         border-radius: 20px;
     }
     .grid-1 img{
@@ -216,20 +218,20 @@
     h4{
         font-size: 50px;
         color: white;
-        margin-left: 30px;
+        margin-left: 50px;
         margin-top: 230px;
         margin-bottom: 30px;
     }
    h6{
         color: rgb(218, 212, 202);
         font-size: 20px;
-        margin-left: 30px;
+        margin-left: 50px;
         margin-bottom: 20px;
     }
-    b{
+    .img-11 img{
+        height: 250px;
         float: right;
-        margin-top: 200px;
-        margin-right: 50px;
+        margin-right: 90px;
 
     }
     label.img{
@@ -273,6 +275,188 @@
         color: rgb(150, 148, 148);
         margin-left: 200px;
         margin-inline-end: 30px;
+    }
+    @media screen and (max-width: 500px)
+    {
+    nav{
+        background-color:#120e3a;
+        height: 100px;
+        width: 100%;
+    }
+    label.logo-1{
+        color: white;
+        font-size: 30px;
+        padding: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        right: 100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #check:checked ul{
+        right: 0;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    section{
+        background: url(bg1.jpg) no-repeat;
+        background-size: cover;
+        height: calc(100vh -80px);
+    }
+    h1{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    h3{
+        font-size: 7px;
+    }
+    p{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 5px;
+        color: rgb(218, 212, 202);
+    }
+    input.button{
+        padding: 10px 20px;
+        text-align: center;
+        margin-top: 30px;
+        width: 21%;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        font-size: 7px;
+        font-weight: lighter;
+        background-color:  #882e88;
+        color: white;
+        margin-inline: 3px;
+    }
+    h2{
+        font-size: 10px;
+        margin-top: 1o0px;
+    }
+    .grid-container{
+        margin-top: 50px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .grid-1{
+        background-color: rgb(83, 52, 112);
+        margin-top: 20px;
+        height: 250px;
+        width: 80%;
+        border-radius: 10px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .grid-1 img{
+        margin-top: 30px;
+        height: 80px;
+    }
+    .grid-2{
+        background-color: rgb(83, 52, 112);
+        margin-top: 20px;
+        height: 250px;
+        width: 80%;
+        border-radius: 10px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .grid-2 img{
+        margin-top: 30px;
+        height: 80px;
+    }
+    h5{
+        color: white;
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    h4{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .img-11{
+        margin-top: 20px;
+        height: 150px;
+        margin-bottom: 120px;
+        max-width: 250%;
+    }
+    .img-11 img{
+        display: flex;
+        justify-content: center;
+    }
+    h6{
+        color: rgb(218, 212, 202);
+        font-size: 5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    label.img{
+        margin: 1px;
+        color: white;
+        display: flex;
+        font-size: small;
+    }
+    .box-container-1{
+        background-color: rgb(83, 52, 112);
+        margin-top: 20px;
+        height: 250px;
+        width: 80%;
+        border-radius: 10px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .box-container-1 img{
+        margin-top: 30px;
+        height: 80px;
+    }
+    .box-container-2{
+        background-color: rgb(83, 52, 112);
+        margin-top: 20px;
+        height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    label.logo-2{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    label.logo-2 a{
+        color: #ff00ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .box-container-2 li{
+        margin-top: 20px;
+        display: block;
+    }
+    .box-container-2 li a{
+        color: rgb(150, 148, 148);
+        margin-left: 90px;
+
+    }
     }
     </style>
 </html>
